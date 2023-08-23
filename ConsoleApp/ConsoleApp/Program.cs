@@ -1,8 +1,8 @@
 ﻿using System;
 
 var name = "Ewa";
-var age = 33;
-var sex = 'f';
+var age = 50;
+var sex = 'm';
 //f - female, m - male; l - lgbt;
 
 if (sex == 'f')
@@ -16,15 +16,15 @@ if (sex == 'f')
         Console.WriteLine("Kobieta poniżej 30 lat.");
     }
 }
-else if (age < 18)
-    if (sex == 'm')
-    {
-        Console.WriteLine("Niepełnoletni mężczyzna.");
-    }
-    else
+else if (age < 18 && sex == 'm')
 
-    {
-        Console.WriteLine("Dane poza zakresem.");
-    }
+{
+    Console.WriteLine("Niepełnoletni mężczyzna.");
+}
+else
+
+{
+    Console.WriteLine("Dane poza zakresem.");
+}
 
 
