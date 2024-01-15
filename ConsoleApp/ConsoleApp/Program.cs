@@ -1,34 +1,70 @@
-﻿using System;
+﻿int number = 112579008;
+string numberAsString = number.ToString();
+char[] chars = numberAsString.ToCharArray();
 
-var name = "Czesław";
-var age = 50;
-var sex = 'f';
-//f - female, m - male; l - lgbt;
+int counter0 = 0;
+int counter1 = 0;
+int counter2 = 0;
+int counter3 = 0;
+int counter4 = 0;
+int counter5 = 0;
+int counter6 = 0;
+int counter7 = 0;
+int counter8 = 0;
+int counter9 = 0;
 
-if (sex == 'f')
+foreach (char letter in chars)
 {
-    if (age == 33 && name == "Ewa")
+    if (letter == '0')
     {
-        Console.WriteLine("Ewa lat 33.");
+        counter0++;
     }
-    else if (age < 30)
+    else if (letter == '1')
     {
-        Console.WriteLine("Kobieta poniżej 30 lat.");
+        counter1++;
     }
-    else
+    else if (letter == '2')
     {
-        Console.WriteLine("Inna kobieta 30-letnia lub starsza.");
+        counter2++;
+    }
+    else if (letter == '3')
+    {
+        counter3++;
+    }
+    else if (letter == '4')
+    {
+        counter4++;
+    }
+    else if (letter == '5')
+    {
+        counter5++;
+    }
+    else if (letter == '6')
+    {
+        counter6++;
+    }
+    else if (letter == '7')
+    {
+        counter7++;
+    }
+    else if (letter == '8')
+    {
+        counter8++;
+    }
+    else if (letter == '9')
+    {
+        counter9++;
     }
 }
-else if (age < 18 && sex == 'm')
-
-{
-    Console.WriteLine("Niepełnoletni mężczyzna.");
-}
-else
-
-{
-    Console.WriteLine("Dane poza zakresem.");
-}
-
+Console.WriteLine("Wyniki dla liczby: " + number);
+Console.WriteLine("0 => " + counter0);
+Console.WriteLine("1 => " + counter1);
+Console.WriteLine("2 => " + counter2);
+Console.WriteLine("3 => " + counter3);
+Console.WriteLine("4 => " + counter4);
+Console.WriteLine("5 => " + counter5);
+Console.WriteLine("6 => " + counter6);
+Console.WriteLine("7 => " + counter7);
+Console.WriteLine("8 => " + counter8);
+Console.WriteLine("9 => " + counter9);
 
